@@ -1,6 +1,6 @@
 mapp.service("ApiService",function($http){
 var main = this;
-
+//pagintion was only character and houses
 
 this.startUrl= "https://anapioficeandfire.com/api";
 //books api retrival

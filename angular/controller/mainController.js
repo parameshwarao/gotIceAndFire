@@ -8,7 +8,8 @@ mapp.controller('mainController',['$scope','$log','ApiService', function($scope,
 
 	this.books = false ;  //  SHOW/HIDE CHARACTER
   //variables to hold response data
-  this.masterdata=[];
+  this.masterdata=[];//initial idea was to collect all data so that searching can be done. But since only two views are to be there. I dropped this idea.
+
 
   this.temp = [];
 
@@ -41,8 +42,8 @@ this.masterBookList = function(){
     //line to display
     var temp2;
     main.bookDAT = response.data;
-    main.masterdata.push.apply(main.masterdata,main.bookDAT);
-
+    main.masterdata.push.apply(main.masterdata,main.bookDAT);//ignore the masterdata,The idea to show all data in third view was dropped.
+//below idea was to display character, that was dropped
   /*  for(var x in main.bookDAT){
       temp2=main.bookDAT[x].url;
       console.log(temp2);
@@ -73,7 +74,7 @@ this.masterHouseList = function(item){
     //line to display
 
     main.houseDAT = response.data;
-    main.masterdata.push.apply(main.masterdata,main.houseDAT);
+    main.masterdata.push.apply(main.masterdata,main.houseDAT);   //ignore the masterdata,The idea to show all data in third view was dropped.
 		console.log(main.houseDAT);
     console.log("to check if names is correct:"+main.houseDAT[1].name);
   }, function errorCallback(response){
@@ -89,7 +90,7 @@ this.masterCharacterList = function(item){
   .then(function successCallback(response){
     //line to display
     main.charDAT = response.data;
-    main.masterdata.push.apply(main.masterdata,main.charDAT);
+    main.masterdata.push.apply(main.masterdata,main.charDAT);//ignore the masterdata,The idea to show all data in third view was dropped.
     console.log(main.charDAT);
 		 console.log("to check if charcter name is correct:"+main.charDAT[1].name);
   }, function errorCallback(response){
@@ -143,7 +144,7 @@ this.pageChar = function(decider){
   }
   else{} //just
 }
-//date function//
+//date function--this idea is also dropped//
 function parseDate(input) {
   var parts = input.split('-');
   return new Date(parts[2], parts[1]-1, parts[0]);
