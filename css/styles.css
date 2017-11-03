@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Satisfy');
+@font-face {
+  font-family: 'miny3';
+  src: url('Gargoyles.ttf');
+}
+@font-face {
+  font-family: 'miny';
+  src: url('Game of Thrones.ttf');
+}
+@font-face {
+font-family:'miny2';
+src: url('DARK11__.ttf');
+}
+body{
+  padding: 0px;
+  margin: 0px;
+  background-color:#4EB1BA;
+
+
+  background-image:url('images/bgimage.jpg');
+  background-image: no-repeat;
+  background-size: cover;
+
+}
+
+
+
+
+header{
+  font-family: miny;
+  color: yellow;
+  text-align: center;
+  background-color: #3A3D45;
+  padding-top:30px;
+  min-height: 70px;
+  border-bottom: RED 4px solid;
+}
+ .footer{
+  text-align: center;
+  color:#ffffff;
+  background-color: #221E1D;
+  font-family: 'Oswald', sans-serif;
+  border-top: #D9853B 4px solid;
+  padding:20px;
+}
+
+
+
+.lom
+{
+ color:#08CBD6;
+}
+#styling .lead{
+  color:black;
+  font-family: 'Satisfy', cursive;
+}
+
+ #bike{
+   color:red;
+ }
+
+#charac{
+  font-family: miny3;
+  font-size: 3em;
+  color: red;
+}
+#charac1{
+  font-family: miny3;
+  font-size: 3em;
+  color:#7EE59D;
+}
+#charac2{
+  font-family: miny3;
+  font-size: 3em;
+  color: #7D1AE0;
+}
+
+#content{
+  font-family: 'Roboto Condensed', sans-serif;
+  color:white;
+  font-size: 2em;
+
+
+}
+
+#content2{
+  background-color: white;
+  color: #BC04F4;
+
+  font-size: 0.9em;
+}
+#content3{
+  background-color: white;
+}
+
+div.container h1#line{
+  color:#5EF209;
+  font-family: cursive;
+  font-size: 2em;
+}
+
+/*books styling*/
+div#bookstem.container{
+  background-color: white;
+  color: #BC04F4;
+  text-align:left;
+  background:url('images/texture2.jpg');
+  text-align: center;
+  width:100%
+}
+div#bookstem.container h1,h3,a{
+    text-align:center;
+}
+div#bookstem.container h3{
+  color:red;
+}
+
+div#bookstem.container li{
+  font-family: cursive;
+  font-size:1.2em;
+  color:black;
+  text-align: left;
+}
+div#bookstem.container span{
+  font-family: 'Satisfy', cursive;
+  color:green;
+  font-weight:200;
+  font-size: 1.3em;
+}
+
+
+div#books.container{
+  background-color: white;
+  color: #BC04F4;
+  text-align:left;
+  background:url('images/got2.jpg') no-repeat,url('images/texture.jpg');
+  width: 70%;
+
+
+}
+div#books.container li{
+  font-family: cursive;
+  font-size:1.2em;
+  color:black;
+}
+
+div#books.container span{
+  font-family: 'Satisfy', cursive;
+  color:green;
+  font-weight:200;
+  font-size: 1.3em;
+}
+div#books.container li#list{
+  font-family: cursive;
+  font-size:1.2em;
+  color:black;
+}
+
+/*houses styling*/
+div#housetem.container{
+  background-color: white;
+  color: #BC04F4;
+  text-align:left;
+  background:url('images/texture3.jpg');
+  text-align: center;
+    width:100%;
+}
+
+div#housetem.container h1{
+    text-align:center;
+    color:red;
+    font-family: serif;
+
+}
+div#housetem.container a{
+  text-align:center;
+}
+
+div#housetem.container button#prev{
+  float:left;
+}
+div#housetem.container button#next{
+  float:right;
+}
+div#housetem.container button#home{
+  float:center;
+}
+
+div#housetem.container h3{
+  color:red;
+}
+
+div#housetem.container li{
+  font-family: cursive;
+  font-size:1.2em;
+  color:black;
+  text-align: left;
+}
+
+div#housetem.container h2#title{
+  color:#0B4AEA;
+  font-family: cursive;
+}
+
+
+
+div#housetem.container span{
+  font-family: 'Satisfy', cursive;
+  color:green;
+  font-weight:200;
+  font-size: 1.4em;
+}
+
+div#housetem.container p{
+  float:none;
+  font-size:1.8em;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+div#house.container{
+  background-color: white;
+  color: #BC04F4;
+  text-align:left;
+  background:url('images/texture3.jpg');
+  width: 70%;
+  opacity: 0.9;
+
+}
+div#house.container li{
+  font-family: cursive;
+  font-size:1.2em;
+  color:black;
+}
+
+div#house.container span{
+  font-family: 'Satisfy', cursive;
+  color:green;
+  font-weight:bolder;
+  font-size: 1.3em;
+}
+div#house.container li#list{
+  font-family: cursive;
+  font-size:1.2em;
+  color:black;
+}
+
+/*character styling*/
+
+div#charatem.container{
+  background-color: white;
+  color: #BC04F4;
+  text-align:left;
+  background:url('images/texture3.jpg');
+  text-align: center;
+  width:70%;
+}
+
+div#charatem.container h1{
+    text-align:center;
+    color:red;
+    font-family: serif;
+
+}
+div#charatem.container a{
+  text-align:center;
+}
+
+div#charatem.container button#prev{
+  float:left;
+}
+div#charatem.container button#next{
+  float:right;
+}
+div#charatem.container button#home{
+  float:center;
+}
+
+div#charatem.container h3{
+  color:red;
+}
+
+div#charatem.container li{
+  font-family: cursive;
+  font-size:1.2em;
+  color:black;
+  text-align: left;
+}
+
+div#charatem.container h2#title{
+  color:#0B4AEA;
+  font-family: cursive;
+}
+
+
+
+div#charatem.container span{
+  font-family: 'Satisfy', cursive;
+  color:green;
+  font-weight:200;
+  font-size: 1.4em;
+}
+
+div#charatem.container p{
+  float:none;
+  font-size:1.8em;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+div#charater.container{
+  background-color: white;
+  color: #BC04F4;
+  text-align:left;
+  background:url('images/chartexture.jpg');
+  width: 70%;
+
+
+}
+div#charater.container li{
+  font-family: cursive;
+  font-size:1.2em;
+  color:black;
+}
+
+div#charater.container span{
+  font-family: 'Satisfy', cursive;
+  color:green;
+  font-weight:bolder;
+  font-size: 1.3em;
+}
+div#charater.container li#list{
+  font-family: cursive;
+  font-size:1.2em;
+  color:black;
+}

@@ -1,0 +1,12 @@
+<h1><h1>
+  <h1 ng-if="chart.name" id="chartit">"{{chart.name}}"</h1>
+  <ul ng-if="chart.name">
+    <li ng-if="chart.name">GENDER:<span>{{chart.gender}}</span></li>
+    <li ng-if="chart.culture">CULTURE:<span>{{chart.culture}}</span></li>
+    <li ng-if="!chart.culture">CULTURE:<span>not available!!</span></li>
+    <li ng-if="chart.born">BORN:<span>{{chart.born}}</span></li>
+    <li ng-if="!chart.born">BORN:<span>Date not available!!</span></li>
+    <li ng-if="chart.playedBy[0]">ACTOR:<span ng-repeat="a in chart.playedBy">{{a}}</span></li>
+    <li ng-if="!chart.playedBy[0]">ACTOR:<span>Not available!!</span></li>
+    </ul>
+  <a class="btn btn-primary"  role="button" ng-href='#/Cdet/{{chart.url.split("/").pop()}}' ng-if="chart.name">click here for more details</a>

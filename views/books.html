@@ -1,0 +1,11 @@
+
+<h1>BOOK NAME:<span>"{{bookie.name}}"</span></h1>
+<ul>
+  <li>ISBN:<span>{{bookie.isbn}}</span></li>
+  <li>AUTHOR:<span ng-repeat="a in bookie.authors">"{{a}}"</span></li>
+  <li>publisher:<span>{{bookie.publisher}}</span></li>
+  <li>country:<span>{{bookie.country}}</span></li>
+  <li>Date released:<span>{{bookie.released  |  date:'dd-MM-yyyy @ h:mma'}}</span></li>
+
+</ul>
+<a class="btn btn-primary"  role="button" ng-href='#/Bdet/{{bookie.url.split("/").pop()}}'>click here for more details</a>

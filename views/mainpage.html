@@ -1,0 +1,80 @@
+
+<div class="row">
+  <div class="col-lg-4">
+    <h2 id="charac">CHARACTERS</h2>
+    <p id="content">Here you will find details about the characters in Game of thrones. </p>
+    <p><a class="btn btn-primary"  role="button" ng-click="first.characterDisplay()">get characters details »</a></p>
+  </div>
+  <div class="col-lg-4">
+    <h2 id="charac1">HOUSES</h2>
+    <p id="content">Here you will find details about the **houses** in Game of thrones.</p>
+    <p><a class="btn btn-primary" role="button"  ng-click="first.housesDisplay()">get houses details »</a></p>
+ </div>
+  <div class="col-lg-4">
+    <h2 id="charac2">BOOKS</h2>
+    <p id="content">Here you will find details about the **books** in Game of thrones.</p>
+    <p><a class="btn btn-primary" role="button" ng-click="first.booksDisplay()">get books details »</a></p>
+  </div>
+</div>
+
+<div class="container">
+  <!--books-->
+
+  <div class="container" ng-if ="first.books" id="bookstem">
+      <ul><h3>SEARCHING IN THE PAGE WITH 50 RECORDS</h3>
+      <li>SEARCH USING NAME:<input type="text" size="12" ng-model="book.name"></li>
+      <li>SEARCH USING publisher:<input type="text" size="12" ng-model="publish.publisher"></li>
+      <li><input type="checkbox" ng-model="bookr" value="false">Alphabetically reverse the page records</li>
+      <!--<li><h4>input format:mm/dd/yyyy--> <!--FROM DATE<input ng-model="dateFrom" type="text" size="8">TO DATE:<input ng-model="dateTo" type="text" size="8"></h4></li>-->
+      </ul>
+               <div ng-repeat="bookie in first.bookDAT | filter:book | filter:publish | orderBy:'name':bookr">
+                   <directo-book></directo-book>
+                </div>
+
+   </div>
+   <!--house-->
+   <div class="container" ng-if ="first.house" id="housetem">
+     <button type="button" id="prev" class="btn btn-primary" ng-click="first.pageHouse(2)">&larr;Previous</button><button type="button" id="next" class="btn btn-primary" ng-click="first.pageHouse(1)">Next&rarr;</button><button type="button" id="home" class="btn btn-primary" ng-click="first.pageHouse(3)">HOME</button>
+     <p>CURRENT PAGE:{{first.Hpagy}}</p>
+     <h2 id="title">SEARCHING IN THE PAGE SIZE:50 RECORDS</h2>
+     <ul>
+     <li>USING HOUSENAME:<input type="text" size="12" ng-model="hn.name"></li>
+     <li>USING REGIONNAME:<input type="text" size="12" ng-model="rn.region"></li>
+     <li>USING WORDS OF HOUSE:<input type="text" size="12" ng-model="wn.coatOfArms"></li>
+     <li><input type="checkbox" ng-model="houser" value="false">Alphabetically reverse the page records</li>
+
+   </ul>
+
+             <div ng-repeat="homie in first.houseDAT | filter:hn | filter:rn |filter:wn | orderBy:'name':houser">
+                   <directo-house></directo-house>
+              </div>
+              <h2 id="title">END OF RECORDS!!</h2>
+              <p>CURRENT PAGE:{{first.Hpagy}}</p>
+    <button type="button" id="prev" class="btn btn-primary" ng-click="first.pageHouse(2)">&larr;Previous</button><button type="button" id="next" class="btn btn-primary" ng-click="first.pageHouse(1)">Next&rarr;</button><button type="button" id="home" class="btn btn-primary" ng-click="first.pageHouse(3)">HOME</button>
+
+
+   </div>
+  <!--character-->
+   <div class="container" ng-if ="first.character" id="charatem">
+     <button type="button" id="prev"  class="btn btn-primary" ng-click="first.pageChar(2)">&larr;Previous</button><button type="button" id="next" class="btn btn-primary" ng-click="first.pageChar(1)">Next&rarr;</button><button type="button" id="home" class="btn btn-primary" ng-click="first.pageChar(3)">HOME</button>
+         <p>CURRENT PAGE:{{first.Cpagy}}</p>
+         <h2 id="title">SEARCHING IN THE PAGE SIZE:50 RECORDS</h2>
+       <ul>
+          <li>search by name  :<input type="text" size="12" ng-model="cnN.name"></li>
+          <li>search by gender : <input type="text" size="12" ng-model="cnG.gender"></li>
+          <li>search by culture :<input type="text" size="12" ng-model="cnC.culture"></li>
+          <li>search by actor :<input type="text" size="12" ng-model="cnP.playedBy"></li>
+          <li><input type="checkbox" ng-model="sort" value="false">Alphabetically reverse the page records</li>
+        </ul>
+
+            <div ng-repeat="chart in first.charDAT | filter:cnN | filter:cnG | filter:cnC | filter:cnP | orderBy:'name':sort">
+           <directo-character></directo-character>
+         </div>
+         <h2 id="title">END OF RECORDS!!</h2>
+         <p>CURRENT PAGE:{{first.Cpagy}}</p>
+     <button type="button" id="prev" class="btn btn-primary" ng-click="first.pageChar(2)">&larr;Previous</button><button type="button" id="next" class="btn btn-primary" ng-click="first.pageChar(1)">Next&rarr;</button><button type="button" id="home"  class="btn btn-primary" ng-click="first.pageChar(3)">HOME</button>
+
+
+    </div>
+    <h1 id="line">you will find all details above!!</h1>
+</div>

@@ -1,0 +1,94 @@
+ <!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="https://v4-alpha.getbootstrap.com/favicon.ico">
+
+    <title>game of thrones using bootstrap atom</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://v4-alpha.getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="https://v4-alpha.getbootstrap.com/examples/justified-nav/justified-nav.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="https://v4-alpha.getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+
+      <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+  </head>
+
+  <body ng-controller="mainController as first">
+
+
+
+
+      <!-- The justified navigation menu is meant for single line per list item.
+           Multiple lines will require custom code not provided by Bootstrap. -->
+  <header class="header">
+      <div class="masthead">
+      <nav>
+          <h1><span class="lom">GAME OF</span> THRONES<h1>
+        </nav>
+      </div>
+  </header>
+
+ <div class="container-fluid" id="styling">
+      <!-- Jumbotron -->
+      <div class="jumbotron">
+        <h1 class="catchy">LO! BEHOLD THE GAME OF THRONES INFORMATION!!!</h1>
+        <p class="lead">BELOW YOU WILL FIND ALL DETAILS LIKE BOOKS,CHARACTER AND HOUSES</p>
+        <p><a class="btn btn-lg btn-success" href="#/" role="button">MAIN PAGE</a></p>
+      </div>
+
+      <!-- Example row of columns -->
+  </div>
+<div container-fluid ng-view>
+
+
+</div>
+
+
+      <!-- Site footer -->
+      <footer class="footer">
+        <p>Acme RAO productions copyright &copy; 2017</p>
+      </footer>
+
+
+   <!-- /container -->
+<!--Jquery-->
+<script  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+
+<!--angular CDN-->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+<script src="https://code.angularjs.org/1.5.6/angular-route.min.js"></script>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    <script type="text/javascript" src="angular/intialize.js"></script>
+    <script type="text/javascript" src="angular/services/servo.js"></script>
+    <script type="text/javascript" src="angular/filters/customfilter/js"></script>
+    <script type="text/javascript" src="angular/controller/mainController.js"></script>
+    <script type="text/javascript" src="angular/controller/bookDetails.js"></script>
+    <script type="text/javascript" src="angular/controller/characterDetails.js"></script>
+    <script type="text/javascript" src="angular/controller/housesDetails.js"></script>
+
+
+
+    <script type="text/javascript" src="angular/directives/directo.js"></script>
+    <script type="text/javascript" src="angular/routes.js"></script>
+
+
+  </body>
+</html>
