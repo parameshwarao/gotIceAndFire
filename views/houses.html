@@ -1,0 +1,9 @@
+<h1 id="hometit">"{{homie.name}}"</h1>
+<ul>
+  <li>REGION:<span>{{homie.region}}</li>
+  <li ng-if="homie.coatOfArms">WORDS OF THE HOUSE:<span>{{homie.coatOfArms}}</span></li>
+  <li ng-if="!homie.coatOfArms">WORDS OF THE HOUSE:<span>words not avialable!!</span></li>
+  <li ng-if="homie.founded">FOUNDED:<span>{{homie.founded}}</span></li>
+  <li ng-if="!homie.founded">FOUNDED:<span>DATE NOT AVAILABLE</span></li>
+  </ul>
+<a class="btn btn-primary"  role="button" ng-href='#/Hdet/{{homie.url.split("/").pop()}}'>click here for more details</a><br>

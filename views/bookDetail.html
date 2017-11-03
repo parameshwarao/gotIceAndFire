@@ -1,0 +1,20 @@
+<div class="container" id="books">
+<h1 style="text-align:center">BOOK DETAILS ARE AS FOLLOWS:</h1>
+<ul>
+  <li>BOOK NAME:<span>{{bookde.details.name}}</span></li>
+  <li>ISBN:<span>{{bookde.details.isbn}}</span></li>
+  <li>AUTHOURS:<span ng-repeat="a in bookde.details.authors">"{{a}}"</span></li>
+  <li>NUMBER OF PAGES IN THE BOOK:<span>{{bookde.details.numberOfPages}}</span></li>
+  <li>PUBLISHER:<span>{{bookde.details.publisher}}</span></li>
+  <li>COUNTRY:<span>{{bookde.details.country}}</span></li>
+  <li>MEDIA TYPE:<span>{{bookde.details.mediaType}}</span></li>
+  <li>Released date:<span>{{bookde.details.released |  date:'MM-dd-yyyy @ h:mma'}}</li>
+  <li>characters:<ul>
+    <span ng-repeat="b in bookde.details.characters"><li><a ng-href='#/Cdet/{{b.split("/").pop()}}'>"{{b}}"</a></li></span>
+  </ul> </li>
+  <li>Povcharacters:<ul>
+    <span ng-repeat="c in bookde.details.povCharacters"><li id="list"><a ng-href='#/Cdet/{{c.split("/").pop()}}'>"{{c}}"</a></li></span>
+
+</ul>
+<p style="float:center"><a class="btn btn-primary" ng-href="#/" role="button" style="float:center">PRESS TO GO BACK MAIN MENU</a></p>
+</div>

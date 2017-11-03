@@ -1,0 +1,61 @@
+<div class="container" id="charater">
+<h1 style="text-align:center"> CHARACTER DETAILS ARE AS FOLLOWS: </h1>
+<ul>
+<li ng-if="characterde.details.name">NAME:<span>{{characterde.details.name}}</span></li>
+<li ng-if="!characterde.details.name">NAME:<span>name not available</span></li>
+
+<li ng-if="characterde.details.gender">GENDER:<span>{{characterde.details.gender}}</span></li>
+<li ng-if="!characterde.details.gender">GENDER:<span>not available!</span></li>
+
+
+<li ng-if="characterde.details.culture">CULTURE:<span>{{characterde.details.culture}}</span></li>
+<li ng-if="!characterde.details.culture">culture:<span>not available!</span></li>
+
+
+<li ng-if="characterde.details.born">BORN:<span>{{characterde.details.born}}</span></li>
+<li ng-if="!characterde.details.born">BORN<span>:not available!!</span></li>
+
+
+<li ng-if="characterde.details.died">DIED:<span>{{characterde.details.died}}</span></li>
+<li ng-if="!characterde.details.died">DIED:<span>not available!!</span></li>
+
+
+<li ng-if="characterde.details.titles[0]">TITLES:<span ng-repeat="a in characterde.details.titles"><span>"{{a}}"</span></span></li>
+<li ng-if="!characterde.details.titles[0]">TITLES:<span>not available!!</span></li>
+
+
+<li ng-if="characterde.details.aliases[0]">ALIASES:<ul ng-repeat="b in characterde.details.aliases"><li><span>"{{b}}"</span></li></ul></li>
+<li ng-if="!characterde.details.aliases[0]">ALIASES:<span>not available!!</span></li>
+
+
+<li ng-if="characterde.details.father">FATHER:<a ng-href='#/Cdet/{{characterde.details.father.split("/").pop()}}'><span>{{characterde.details.father}}</span></a></li>
+<li ng-if="!characterde.details.father">FATHER:<span>not available!!</span></li>
+
+<li ng-if="characterde.details.mother">MOTHER:<a ng-href='#/Cdet/{{characterde.details.mother.split("/").pop()}}'><span>{{characterde.details.mother}}</span></a></li>
+<li ng-if="!characterde.details.mother">MOTHER:<span>not available!!</span></li>
+
+<li ng-if="characterde.details.spouses[0]">SPOUSES:<span ng-repeat="c in characterde.details.spouses"}}><a ng-href='#/Cdet/{{c.split("/").pop()}}'>"{{c}}"</a></span></li>
+<li ng-if="!characterde.details.spouses[0]">SPOUSES:<span>not available!!</span></li>
+
+<li ng-if="characterde.details.allegiances[0]">allegiances:<span ng-repeat="d in characterde.details.allegiances"><a ng-href='#/Hdet/{{d.split("/").pop()}}'>"{{d}}"</a></span></li>
+<li ng-if="!characterde.details.allegiances[0]">allegiances:<span>They are not available!!</span></li>
+
+<li ng-if="characterde.details.books[0]">BOOKS:<ul ng-repeat="d in characterde.details.books"><li><a ng-href='#/Bdet/{{d.split("/").pop()}}'><span>"{{d}}"</span></a></li></ul></li>
+<li ng-if="!characterde.details.books[0]">allegiances:<span>They are not available!!</span></li>
+
+<li ng-if="characterde.details.povBooks[0]">POVBOOKS:<ul ng-repeat="d in characterde.details.povBooks"><li><a ng-href='#/Bdet/{{d.split("/").pop()}}'><span>"{{d}}"</span></a></li></ul></li>
+<li ng-if="!characterde.details.povBooks[0]">POVBOOKS:<span>They are not available!!</span></li>
+
+<li ng-if="characterde.details.tvSeries[0]">TV SERVICES:<ul ng-repeat="d in characterde.details.tvSeries"><li><span>"{{d}}"</span></li></ul></li>
+<li ng-if="!characterde.details.tvSeries[0]">TV SERVICES:<span>They are not available!!</span></li>
+
+<li ng-if="characterde.details.playedBy[0]">PLAYED BY:<span ng-repeat="d in characterde.details.playedBy">"{{d}}"</span></li>
+<li ng-if="!characterde.details.playedBy[0]">PLAYED BY:<span>They are not available!!</span></li>
+
+
+
+
+</ul>
+<p style="float:center"><a class="btn btn-primary" ng-href="#/" role="button" style="float:center">PRESS TO GO BACK MAIN MENU</a></p>
+
+</div>

@@ -1,0 +1,43 @@
+<div class="container" id="house">
+<h1 style="text-align:center">HOUSE DETAILS ARE AS FOLLOWS:</h1>
+
+<ul>
+<li>NAME OF THE HOUSE:<span>"{{housede.details.name}}"</span></li>
+<li>REGION:<span>"{{housede.details.region}}"</span></li>
+<li ng-if="housede.details.coatOfArms">coatOfArms:<span>"{{housede.details.coatOfArms}}"</span></li>
+<li ng-if="!housede.details.coatOfArms">coat of arms:<span> they are not available!!</span></li>
+<li ng-if="housede.details.words">WORDS:<span>{{housede.details.words}}</span></li>
+<li ng-if="!housede.details.words">WORDS<span>:HAS NO WORDS!!</span></li>
+<li ng-if="housede.details.titles[0]">Titles held are:<span ng-repeat="a in housede.details.titles">"{{a}}"</span></li>
+<li ng-if="!housede.details.titles[0]">Titles:<span>There are no titles owned by this house</span></li>
+<li ng-if="housede.details.seats[0]">SEATS IN THE HOUSE ARE:<span ng-repeat="b in housede.details.seats">"{{b}}"</span></li>
+<li ng-if="!housede.details.seats[0]">SEATS:<span>THERE ARE NO SEATS IN THIS HOUSE!!!</span></li>
+<li ng-if="housede.details.currentLord">CURRENT LORD OF THE HOUSE:<a ng-href='#/Cdet/{{housede.details.currentLord.split("/").pop()}}'>{{housede.details.currentLord}}</a></li>
+<li ng-if="!housede.details.currentLord">CURRENT LORD:<span> Lord!chooses to remain anyonomous!!</span></li>
+<li ng-if="housede.details.heir">Heir of the house:<a ng-href='#/Cdet/{{housede.details.heir.split("/").pop()}}'>{{housede.details.heir}}</a></li>
+<li ng-if="!housede.details.heir">Heir of the house:<span>Unknown,one day the warrior will  reveal himself!!</span></li>
+<li ng-if="housede.details.overlord">OVERLORD:<a ng-href='#/Hdet/{{housede.details.overlord.split("/").pop()}}'>{{housede.details.overlord}}</a></li>
+<li ng-if="!housede.details.overlord">OVERLORD:<span>not available, Answers to no one!!</span></li>
+<li ng-if="housede.details.founded">HOUSE FOUNDED DATE:<span>"{{housede.details.founded}}"</span></li>
+<li ng-if="!housede.details.founded">FOUNDED:<span>date unknown!!</span></li>
+<li ng-if="housede.details.founder">Founder of the house:<a ng-href='#/Cdet/{{housede.details.founder.split("/").pop()}}'>{{housede.details.founder}}</a></li>
+<li ng-if="!housede.details.founded">FOUNDER: <span>The house founder is unknown!!</span></li>
+<li ng-if="housede.details.diedOut">DIED OUT DATE:<span>{{housede.details.diedOut}}</span></li>
+<li ng-if="!housede.details.diedOut">DIED OUT DATE: <span>unknown!!</span></li>
+<li ng-if="housede.details.ancestralWeapons[0]">ANCESTRAL WEAPONS:<span ng-repeat="c in housede.details.ancestralWeapons">"{{c}}"</span></li>
+<li ng-if="!housede.details.ancestralWeapons[0]">WEAPONS:<span>ANCESTRAL WEAPONS ARE NOT AVAILABLE!!</span></li>
+<li ng-if="housede.details.cadetBranches[0]">THE BRANCH CADETS ARE:<ul ng-repeat="d in housede.details.cadetBranches">
+<li><a ng-href='#/Cdet/{{d.split("/").pop()}}'>{{d}}</a></li>
+</ul></li>
+<li ng-if="!housede.details.cadetBranches[0]">THE BRANCH CADETS:<span>THEY ARE UNKNOWN!!PHERHAPS THEY WISH TO REMAIN MYSTERIOUS!!</span></li>
+<li ng-if="housede.details.swornMembers[0]">THE SWORN MEMBERS ARE:<ul ng-repeat="e in housede.details.swornMembers"><li><a ng-href='#/Cdet/{{e.split("/").pop()}}'>"{{e}}"</a></li>
+
+</ul></li>
+<li ng-if="!housede.details.swornMembers[0]">THE SWORN MEMBERS:<span>They are not available!!</span></li>
+
+
+
+</ul>
+
+<p style="float:center"><a class="btn btn-primary" ng-href="#/" role="button" style="float:center">PRESS TO GO BACK MAIN MENU</a></p>
+</div>
