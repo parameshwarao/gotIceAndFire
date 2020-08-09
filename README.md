@@ -1,4 +1,4 @@
-# gotIceAndFire
+# gotIceAndFire  -  Legacy portfolio project
 level 5 link:
 GAME OF THRONES ICE AND FIRE:
 I MADE THE FRONTEND USING api https://anapioficeandfire.com/
